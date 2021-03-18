@@ -15,7 +15,7 @@ class PersonItemProcessor : ItemProcessor<Person, Person> {
 
     override fun process(item: Person): Person =
         Person(
-            item.lastName.toUpperCase(), item.lastName.toUpperCase()
+            item.firstName.toUpperCase(), item.lastName.toUpperCase()
         )
             .also { log.info("Converting ($item) into ($it)") }
 }
