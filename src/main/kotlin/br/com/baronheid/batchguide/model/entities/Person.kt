@@ -1,5 +1,8 @@
 package br.com.baronheid.batchguide.model.entities
 
-class Person(var firstName: String, var lastName: String) {
-
+data class Person(var firstName: String, var lastName: String) {
+    constructor() : this(
+        "",
+        ""
+    )
 }
